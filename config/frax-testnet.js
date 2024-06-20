@@ -26,5 +26,5 @@ module.exports = {
     nonfungiblePositionManagerAddress: "0xc81673F4aeE286Bd6aeb8620F0f4bca763508E8C",
     nonfungiblePositionManagerStartBlock: 9453538,
     minETHLocked: 0,
-  }
+  },
 };

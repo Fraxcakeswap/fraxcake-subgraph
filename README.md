@@ -1,20 +1,25 @@
-# PancakeSwap Subgraph
+# Fraxcake Subgraph
 
-TheGraph exposes a GraphQL endpoint to query the events and entities within the Binance Smart Chain and PancakeSwap ecosystem.
+Goldsky exposes a GraphQL endpoint to query the events and entities within the Binance Smart Chain and FraxcakeSwap ecosystem.
 
 Currently, there are multiple subgraphs, but additional subgraphs can be added to this repository, following the current architecture.
-
-## Subgraphs 
-- link - https://developer.pancakeswap.finance/apis/subgraph
 
 ## Dependencies
 
 - [Graph CLI](https://github.com/graphprotocol/graph-cli)
   - Required to generate and build local GraphQL dependencies.
-
 ```shell
 yarn global add @graphprotocol/graph-cli
 ```
+
+- [Goldsky](https://docs.goldsky.com/subgraphs/deploying-subgraphs)
+```shell
+curl https://goldsky.com | sh
+```
+
+## Prepare code using templates
+
+1. NETWORK=frax-testnet yarn template
 
 ## Deployment
 
@@ -26,10 +31,7 @@ For any of the subgraph: `blocks` as `[subgraph]`
 
 3. Run the `yarn build` command to build the subgraph, and check compilation errors before deploying.
 
-4. Run `graph auth --product hosted-service '<ACCESS_TOKEN>'`
+4. Run `goldsky login`
 
-5. Deploy via `yarn deploy`.
+5. Deploy via `goldsky subgraph deploy <project-name>/<version> --path ./build`.
 
-## v1
-
-To access subgraphs related to PancakeSwap v1 ecosystem ([article](https://pancakeswap.medium.com/the-great-migration-vote-4093cb3edf23)), use [`v1`](https://github.com/pancakeswap/pancake-subgraph/tree/v1) branch.
