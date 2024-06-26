@@ -8,10 +8,10 @@ module.exports = {
   network: "frax-testnet",
   wNativeAddress: WETH,
   v3: {
-    wNativeStablePoolAddress: "",
+    wNativeStablePoolAddress: "0x1E4C8A2366526231Ca7402F59c68124288629EF7",
     stableIsToken0: false,
     factoryAddress: "0x2fB36a4B80baC9803E42a2e312fbE527A01156e9",
-    startBlock: 9453538,
+    startBlock: 9713242,
     stableCoins: [
       "0xfc00000000000000000000000000000000000001", // FRAX
     ],
@@ -24,7 +24,7 @@ module.exports = {
       "0xfc00000000000000000000000000000000000005", // sfrxETH
     ],
     nonfungiblePositionManagerAddress: "0xc81673F4aeE286Bd6aeb8620F0f4bca763508E8C",
-    nonfungiblePositionManagerStartBlock: 9453538,
+    nonfungiblePositionManagerStartBlock: 8806380,
     minETHLocked: 0,
   },
 };
