@@ -17,21 +17,19 @@ yarn global add @graphprotocol/graph-cli
 curl https://goldsky.com | sh
 ```
 
-## Prepare code using templates
-
-1. NETWORK=frax-testnet yarn template
-
 ## Deployment
 
 For any of the subgraph: `blocks` as `[subgraph]`
 
 1. Run the `cd subgraphs/[subgraph]` command to move to the subgraph directory.
 
-2. Run the `yarn codegen` command to prepare the TypeScript sources for the GraphQL (generated/\*).
+2. Run `NETWORK=frax-testnet yarn template` to prepare code using templates.
 
-3. Run the `yarn build` command to build the subgraph, and check compilation errors before deploying.
+3. Run the `yarn codegen` command to prepare the TypeScript sources for the GraphQL (generated/\*).
 
-4. Run `goldsky login`
+4. Run the `yarn build` command to build the subgraph, and check compilation errors before deploying.
 
-5. Deploy via `goldsky subgraph deploy <project-name>/<version> --path ./build`.
+5. Run `goldsky login`
+
+6. Deploy via `goldsky subgraph deploy <project-name>/<version> --path ./build`.
 
