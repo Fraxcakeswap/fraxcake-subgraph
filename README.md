@@ -23,7 +23,7 @@ For any of the subgraph: `blocks` as `[subgraph]`
 
 1. Run the `cd subgraphs/[subgraph]` command to move to the subgraph directory.
 
-2. Run `NETWORK=holesky yarn template` to prepare code using templates.
+2. Run `NETWORK=frax-testnet yarn template` to prepare code using templates.
 
 3. Run the `yarn codegen` command to prepare the TypeScript sources for the GraphQL (generated/\*).
 
