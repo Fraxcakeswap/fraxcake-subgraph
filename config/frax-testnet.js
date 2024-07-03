@@ -5,7 +5,7 @@ const WETH = "0xfc00000000000000000000000000000000000006"; // frxETH
  * @type import('./config').NetworkConfig
  */
 module.exports = {
-  network: "frax-testnet",
+  network: "holesky",
   wNativeAddress: WETH,
   v3: {
     wNativeStablePoolAddress: "0x06d962248c623e3ec0ca374a9e3816341f50a4bf",
@@ -14,7 +14,7 @@ module.exports = {
     startBlock: 9831707,
     stableCoins: [
       "0xfc00000000000000000000000000000000000001", // FRAX
-      "0x876FfDc5F2aa8C4927A0AEA52b150e112f6ddfF6", // USDT
+      "0x876ffdc5f2aa8c4927a0aea52b150e112f6ddff6", // USDT
       "0x54D2E2661c5a9381e17c89e564cbC0d456703f1b", // USDC
     ],
     whitelistAddresses: [
@@ -24,7 +24,7 @@ module.exports = {
       "0xfc00000000000000000000000000000000000003", // FPI
       "0xfc00000000000000000000000000000000000004", // FPIS
       "0xfc00000000000000000000000000000000000005", // sfrxETH
-      "0x876FfDc5F2aa8C4927A0AEA52b150e112f6ddfF6", // USDT
+      "0x876ffdc5f2aa8c4927a0aea52b150e112f6ddff6", // USDT
       "0x54D2E2661c5a9381e17c89e564cbC0d456703f1b", // USDC
     ],
     nonfungiblePositionManagerAddress: "0xc81673F4aeE286Bd6aeb8620F0f4bca763508E8C",
