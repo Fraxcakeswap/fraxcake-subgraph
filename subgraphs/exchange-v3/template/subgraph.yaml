@@ -8,9 +8,9 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: holesky
+    network: frax-testnet
     source:
-      address: "0x2fB36a4B80baC9803E42a2e312fbE527A01156e9"
+      address: "0xDC28090A6A694E678B821A63423a30F304fFE8bf"
       abi: Factory
       startBlock: 9831707
     mapping:
@@ -37,9 +37,9 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: holesky
+    network: frax-testnet
     source:
-      address: "0xc81673F4aeE286Bd6aeb8620F0f4bca763508E8C"
+      address: "0x9126c64a593EB84db0e9af7c5cCecE84cD7FEc48"
       abi: NonfungiblePositionManager
       startBlock: 8806380
     mapping:
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: holesky
+    network: frax-testnet
     source:
       abi: Pool
     mapping:
