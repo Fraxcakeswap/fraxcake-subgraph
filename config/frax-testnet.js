@@ -5,7 +5,7 @@ const WETH = "0xfc00000000000000000000000000000000000006"; // frxETH
  * @type import('./config').NetworkConfig
  */
 module.exports = {
-  network: "holesky",
+  network: "frax-testnet",
   wNativeAddress: WETH,
   v3: {
     wNativeStablePoolAddress: "0x06d962248c623e3ec0ca374a9e3816341f50a4bf",
